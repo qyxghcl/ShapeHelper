@@ -1,0 +1,37 @@
+<idea-plugin>
+    <id>com.hunliji.plugin.shape</id>
+    <name>ShapeHelper</name>
+    <version>1.0</version>
+    <vendor email="kou_zhong@hunliji.com">婚礼纪</vendor>
+
+    <description><![CDATA[
+      Android Studio插件，一个生成shape框架代码的插件.<br/>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      1.0.<br/>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="com.hunliji.shapeplugin" class="MyShapeAction" text="ShapeHelper"
+                description="Android Studio插件,一个生成shape框架代码的插接件">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+    </actions>
+
+</idea-plugin>
